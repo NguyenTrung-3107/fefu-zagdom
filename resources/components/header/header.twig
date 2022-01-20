@@ -7,11 +7,11 @@
             name: 'Реализованные проекты',
         },
         {
-            url: '/',
+            url: route('news'),
             name: 'Новости',
         },
         {
-            url: '/',
+            url: route('contacts'),
             name: 'Контакты',
         },
     ],
@@ -80,7 +80,7 @@
                 } %}
             </nav>
             <div class="Offcanvas__contacts">
-                {% include '@components/contacts/contacts.twig' %}
+                {% include '@components/contacts-nav/contacts-nav.twig' %}
             </div>
         </div>
     </div>
