@@ -7,13 +7,13 @@ body {
     display: flex;
     flex-direction: column;
     max-height: 100vh;
-    font-size: 30px;
-    //background: #a0aec0;
-    padding: 10%;
-    margin: 0 auto;
 
     &__main {
         flex: 1;
         //background: #6b7280;
     }
+}
+
+.Container {
+    @extend .uk-container;
 }
