@@ -41,10 +41,6 @@ $global-inverse-color: white;
 
 $inverse-global-color: $global-inverse-color;
 
-$form-height: 58px;
-$form-background: white;
-$form-focus-background: white;
-
 $global-font-family: 'Open Sans', sans-serif;
 $base-heading-font-family: 'Montserrat', sans-serif;
 
@@ -68,69 +64,6 @@ $base-heading-font-family: 'Montserrat', sans-serif;
 
 @mixin hook-button-secondary {
     border: 1px solid;
-}
-
-@mixin hook-modal-dialog {
-    width: 448px;
-    border-radius: 10px;
-    background-color: $color-snow-drift;
-}
-
-@mixin hook-modal-body {
-    padding: 48px 48px 56px;
-
-    @include vw-sm-down {
-        padding: 64px 24px 32px;
-    }
-}
-
-@mixin hook-modal-close-default {
-    top: 24px;
-    right: 24px;
-    padding: 9px;
-    border-radius: 6px;
-    background-color: rgba($color-green, 0.2);
-
-    svg {
-        color: $color-green;
-
-        line {
-            stroke-width: 2px;
-        }
-    }
-}
-
-@mixin title-mixin {
-    font-weight: $font-weight-bold;
-    line-height: 1.2;
-    color: $color-black;
-}
-
-@mixin modal-title-mixin {
-    @include title-mixin;
-
-    font-size: toRem(32px);
-
-    @include vw-sm-down {
-        font-size: toRem(30px);
-    }
-}
-
-@mixin hook-modal-title {
-    @include modal-title-mixin;
-
-    margin-bottom: 24px;
-}
-
-@mixin hook-form {
-    padding: 16px;
-    border-radius: 5px;
-}
-
-@mixin hook-form-multi-line {
-    resize: none;
-    height: 100px;
-    padding-y: 16px;
 }
 
 @import "~uikit/src/scss/uikit.scss";
