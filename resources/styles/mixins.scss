@@ -1,0 +1,12 @@
+@mixin page-title-mixin {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    font-size: toRem(38px);
+    line-height: 120%;
+
+    margin-right: 8px;
+
+    @include vw-xs-down {
+        margin-bottom: 8px;
+    }
+}

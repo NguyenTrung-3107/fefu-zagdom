@@ -3,10 +3,23 @@ body, html {
     padding: 0;
 }
 
+@mixin page-title-mixin {
+    font-family: 'Monserrat', sans-serif;
+    font-weight: bold;
+    font-size: toRem(38px);
+    line-height: 120%;
+
+    margin-right: 8px;
+
+    @include vw-xs-down {
+        margin-bottom: 8px;
+    }
+}
+
 .Layout {
     display: flex;
     flex-direction: column;
-    max-height: 100vh;
+    min-height: 100vh;
 
     &__main {
         flex: 1;
@@ -31,6 +44,28 @@ body, html {
                 padding: 32px 16px;
             }
         }
+    }
+}
+
+.Page {
+    padding-y: 40px 80px;
+
+    @include vw-sm-down{
+        padding-top: 20px;
+    }
+
+    &__breadcrumbs {
+        padding-bottom: 48px;
+
+        @include vw-sm-down {
+            padding-bottom: 32px;
+        }
+    }
+
+    &__title {
+        @include page-title-mixin;
+
+        margin-bottom: 32px;
     }
 }
 
