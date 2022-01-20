@@ -23,6 +23,7 @@
     "dependencies": {
         "npm": "^8.1.4",
         "postcss-axis": "^0.1.2",
+        "swiper": "^7.3.1",
         "uikit": "^3.9.4"
     }
 }
